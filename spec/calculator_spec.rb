@@ -2,6 +2,13 @@
 
 require './lib/calculator'
 
+describe "calculator" do
+  it "adds numbers" do
+    calc = Calculator.new
+    expect(calc.add(2, 3)).to eql(5)
+  end
+end
+
 describe Calculator do
   describe '#add' do
     it 'returns the sum of two numbers' do
